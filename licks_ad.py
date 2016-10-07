@@ -16,7 +16,7 @@ import glob
 curDirPath =  os.path.dirname(os.path.realpath(__file__))
 os.chdir(curDirPath)
 print "Working directory is set to ", os.getcwd()
-fileName = "8055_adlibtest.csv"
+fileName = "data\Kissykissylicklick\NpHR\8055__test_adlib.csv"
 
 # variables
 value1 = list()
@@ -42,6 +42,9 @@ acqt = 0 # sampling rate in ms
 CH = 0
 herro = np.genfromtxt(fileName, delimiter = ' ', usecols= CH)
 print herro
+
+plt.plot(herro)
+plt.show()
 
 # function detecting the begining and end of each bout
 
