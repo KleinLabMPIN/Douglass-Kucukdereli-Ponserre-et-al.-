@@ -13,7 +13,7 @@ os.chdir(curpath)
 th_low= 8.0
 th_high= 90.0
 
-dirName = '.\data\Kissykissylicklick\NpHR\\'
+dirName = '.\\data\lickdata\\NpHR\\'
 fileList = []
 sumList = []
 files = os.listdir(dirName)
@@ -25,7 +25,7 @@ for file in files:
 nphr = pd.DataFrame({'Animals' : fileList, 'Sum' : sumList})
 print nphr
 
-dirName = '.\data\Kissykissylicklick\mCherry\\'
+dirName = '.\\data\\lickdata\\mCherry\\'
 fileList = []
 sumList = []
 files = os.listdir(dirName)
@@ -38,4 +38,4 @@ mcherry = pd.DataFrame({'Animals' : fileList, 'Sum' : sumList})
 print mcherry
 
 data = pd.DataFrame({'mCherry_Animals' : mcherry.Animals, 'mCherry' : mcherry.Sum, 'NpHR_Animals' : nphr.Animals, 'NpHR' : nphr.Sum})
-data.to_csv("data\Kissykissylicklick\\fresubin_data.csv", sep= ',')
+data.to_csv(".\\data\\lickdata\\fresubin_data.csv", sep= ',')

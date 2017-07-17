@@ -27,7 +27,7 @@ if __name__ == "__main__":
     th_low= 12.0
     th_high= 140.0
 
-    dirName = ('.\data\Kissykissylicklick\NpHR\\', '.\data\Kissykissylicklick\mCherry\\')
+    dirName = ('.\\data\\lickdata\NpHR\\', '.\\data\\lickdata\mCherry\\')
     fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(8, 6))
     labelList = []
     count = 1
